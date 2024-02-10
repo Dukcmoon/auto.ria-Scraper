@@ -1,7 +1,7 @@
 import json
 import sqlite3
 import os
-def writedb():
+def upload_to_sql():
     try:
         os.remove("file/Cars.sqlite")
     except:
@@ -27,7 +27,7 @@ def writedb():
         conn.commit()
     conn.close()
 
-def carimport(Price_filter: None, Mileage_filter: None, Title_filter: None):
+def upload_to_json(Price_filter: None, Mileage_filter: None, Title_filter: None):
     conn = sqlite3.connect('file/Cars.sqlite')
     cursors = conn.cursor()
 
@@ -57,7 +57,6 @@ def carimport(Price_filter: None, Mileage_filter: None, Title_filter: None):
             'Mileage': row[3]
         })
 
-    with open('file/data.json', 'w') as f:
+    with open('file/upload.json', 'w') as f:
         json.dump(json_data, f)
-
     conn.close()
