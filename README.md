@@ -1,7 +1,6 @@
 how to run the code
-1. you need god
-2. install files 
-3. start main.py whith main.py option comands
+1. install files 
+3. start main.py whith main.py --option (comand)
 4. comands start_spider, start_upload
 5. option for start_upload 
 (--model  #Enter car model)
