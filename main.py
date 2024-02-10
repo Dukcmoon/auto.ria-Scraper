@@ -1,5 +1,5 @@
-from CarSpider import startSpider
-from sqlitedb import upload_to_sql, upload_to_json
+from car_spider import startSpider
+from sqlite_db import upload_to_sql, upload_to_json
 import click
 
 global model, mileage, price
