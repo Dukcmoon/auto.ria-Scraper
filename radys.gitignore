@@ -29,6 +29,13 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+radys.gitignore
+
+#file scrap
+file/Cars.json
+file/Cars.sqlite
+file/data.json
+file/upload.json
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

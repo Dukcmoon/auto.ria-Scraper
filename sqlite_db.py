@@ -1,12 +1,13 @@
 import json
 import sqlite3
 import os
+
+
 def upload_to_sql():
     try:
         os.remove("file/Cars.sqlite")
     except:
         pass
-
 
     conn = sqlite3.connect('file/Cars.sqlite')
     cursor = conn.cursor()
@@ -27,7 +28,8 @@ def upload_to_sql():
         conn.commit()
     conn.close()
 
-def upload_to_json(Price_filter: None, Mileage_filter: None, Title_filter: None):
+
+def upload_to_json(price_filter, mileage_filter, title_filter):
     conn = sqlite3.connect('file/Cars.sqlite')
     cursors = conn.cursor()
 
@@ -37,18 +39,27 @@ def upload_to_json(Price_filter: None, Mileage_filter: None, Title_filter: None)
     json_data = []
 
     for row in result:
-        if Title_filter in row[0]:
-            print(row[0])
-        else:
-            break
-        if row[2] <= int(Price_filter):
-            print(row[2])
-        else:
-            break
-        if row[3] <= int(Mileage_filter):
-            print(row[3])
-        else:
-            break
+        Title_filter_list = []
+        for letter in title_filter.lower():
+            Title_filter_list.append(letter)
+
+        if title_filter != 0:
+            if all(elem in row[0].lower() for elem in Title_filter_list):
+                print(row[0])
+            else:
+                continue
+
+        if price_filter != 0:
+            if row[2] <= int(price_filter):
+                print(row[2])
+            else:
+                continue
+
+        if mileage_filter != 0:
+            if row[3] <= int(mileage_filter):
+                print(row[3])
+            else:
+                continue
 
         json_data.append({
             'Title': row[0],
