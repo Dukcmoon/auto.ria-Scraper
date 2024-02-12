@@ -1,8 +1,12 @@
-how to run the code
-1. install files 
-3. start main.py whith main.py --option (comand)
-4. comands start_spider, start_upload
-5. option for start_upload 
-(--model  #Enter car model)
-(--mileage  #Enter car mileage in km)
-(--price  #Enter car Price in $)
+How use: main.py [OPTIONS] [COMMANDS]
+COMMANDS: 
+
+1. start_scraping
+
+2. start_upload
+   --model
+        Enter the car model or 0 if not applicable
+   --mileage
+        Enter the car maximum mileage in km or 0 if not applicable"
+   --price
+        Enter the car maximum price in $ or 0 if not applicable
