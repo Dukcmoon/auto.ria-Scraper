@@ -39,12 +39,13 @@ def upload_to_json(price_filter, mileage_filter, title_filter):
     json_data = []
 
     for row in result:
-        Title_filter_list = []
-        for letter in title_filter.lower():
-            Title_filter_list.append(letter)
 
         if title_filter != 0:
-            if all(elem in row[0].lower() for elem in Title_filter_list):
+            title_filter_list = []
+            for letter in title_filter.lower():
+                title_filter_list.append(letter)
+
+            if all(elem in row[0].lower() for elem in title_filter_list):
                 print(row[0])
             else:
                 continue

@@ -9,7 +9,8 @@ __pycache__/
 
 # C extensions
 *.so
-
+file/*.json
+file/*.sqlite
 # Distribution / packaging
 .Python
 build/
@@ -29,7 +30,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-radys.gitignore
+.gitignore
 
 #file scrap
 file/Cars.json

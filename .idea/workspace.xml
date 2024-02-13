@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab93ea77-ef7a-4d19-bc3a-484f2e7a7f04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_02_2024_20_03_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_02_2024_20_03__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarSpider/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/CarSpider/CarSpider/spiders/car_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/Cars.json" beforeDir="false" afterPath="$PROJECT_DIR$/file/Cars.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/Cars.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/file/Cars.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/radys.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/radys.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/radys.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sqlite_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite_db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +35,7 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="28dd94d7-02bf-407c-8e38-535db77f106e" />
-        <option name="url" value="https://github.com/Dukcmoon/Autoria-ScraperV2.git" />
+        <option name="url" value="https://github.com/Dukcmoon/auto.ria-Scraper.git" />
       </UrlAndAccount>
     </option>
   </component>
