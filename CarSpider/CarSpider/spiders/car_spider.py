@@ -11,7 +11,7 @@ class CarspiderSpider(scrapy.Spider):
         for content in response.css('div.content'):
             yield {
                 'URL': content.css('a.address').attrib['href'],
-                'Title': content.css('span.blue.bold::text').get().replace(" ", ""),
+                'Title': content.css('span.blue.bold::text').get(),
                 'Price': content.css('span.bold.size22.green::text').get().replace(" ", ""),
                 'Mileage': content.css('li.item-char.js-race::text').get().replace(' тыс. км', '')
             }
@@ -23,13 +23,6 @@ class CarspiderSpider(scrapy.Spider):
 
 
 def startSpider():
-    open("file/Cars.json", "w").close()
-    process = CrawlerProcess(
-        settings={
-            "FEEDS": {
-                "file/Cars.json": {"format": "json"},
-            },
-        }
-    )
+    process = CrawlerProcess()
     process.crawl(CarspiderSpider)
     process.start()

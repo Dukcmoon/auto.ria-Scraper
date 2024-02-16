@@ -2,33 +2,6 @@ import json
 import sqlite3
 import os
 
-
-def upload_to_sql():
-    try:
-        os.remove("file/Cars.sqlite")
-    except:
-        pass
-
-    conn = sqlite3.connect('file/Cars.sqlite')
-    cursor = conn.cursor()
-
-    with open('file/Cars.json', 'r') as file:
-        data = json.load(file)
-
-    cursor.execute('''CREATE TABLE cars (
-                    title TEXT,
-                    url TEXT,
-                    price INTEGER,
-                    mileage INTEGER
-                    )''')
-
-    for item in data:
-        cursor.execute(f"INSERT INTO cars (title, url, price, mileage) VALUES (?, ?, ?, ?)",
-                       (item['Title'], item['URL'], item['Price'], item['Mileage']))
-        conn.commit()
-    conn.close()
-
-
 def upload_to_json(price_filter, mileage_filter, title_filter):
     conn = sqlite3.connect('file/Cars.sqlite')
     cursors = conn.cursor()
