@@ -1,8 +1,9 @@
 import scrapy
 from scrapy.crawler import CrawlerProcess
+from scrapy.utils.project import get_project_settings
 
 
-class CarspiderSpider(scrapy.Spider):
+class CarSpiderSpider(scrapy.Spider):
     name = "CarSpider"
     allowed_domains = ['auto.ria.coms']
     start_urls = ["https://auto.ria.com/car/used/"]
@@ -23,6 +24,13 @@ class CarspiderSpider(scrapy.Spider):
 
 
 def startSpider():
-    process = CrawlerProcess()
-    process.crawl(CarspiderSpider)
-    process.start()
+    try:
+        process = CrawlerProcess(settings=get_project_settings())
+        process.crawl(CarSpiderSpider)
+        process.start()
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+
+
+

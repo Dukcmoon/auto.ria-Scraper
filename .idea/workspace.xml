@@ -5,22 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab93ea77-ef7a-4d19-bc3a-484f2e7a7f04" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_02_2024_20_03_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_02_2024_20_03__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarSpider/CarSpider/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/CarSpider/CarSpider/middlewares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarSpider/CarSpider/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/CarSpider/CarSpider/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarSpider/CarSpider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CarSpider/CarSpider/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarSpider/CarSpider/spiders/car_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/CarSpider/CarSpider/spiders/car_spider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/Cars.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/Cars.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/upload.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sqlite_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite_db.py" afterDir="false" />
     </list>
@@ -74,18 +65,18 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Nikita\PycharmProjects\Scraper\CarSpider\CarSpider" />
       <recent name="C:\Users\Nikita\PycharmProjects\Scraper" />
+      <recent name="C:\Users\Nikita\PycharmProjects\Scraper\CarSpider\CarSpider" />
       <recent name="C:\Users\Nikita\PycharmProjects\Scraper\CarSpider\CarSpider\spiders" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.python main.py start-upload --model Toyota Corolla --mileage 50000 --price 20000">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Scraper" />
       <option name="INTERPRETER_OPTIONS" value="" />

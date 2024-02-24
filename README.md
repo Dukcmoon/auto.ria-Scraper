@@ -29,8 +29,8 @@ Specify the maximum price of the car in dollars. If not applicable, enter `0`.
 
 ## Example Usage
 ```bash
-python main.py start-scraping
-python main.py start-upload --model Toyota --mileage 50000 --price 20000
+python main.py scrapy
+python main.py upload --model Toyota --mileage 50000 --price 20000
 ```
 
 The above commands demonstrate how to use the script with different commands and options.  
