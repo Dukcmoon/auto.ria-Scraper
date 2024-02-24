@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab93ea77-ef7a-4d19-bc3a-484f2e7a7f04" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarSpider/CarSpider/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/CarSpider/CarSpider/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarSpider/CarSpider/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/CarSpider/CarSpider/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarSpider/CarSpider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CarSpider/CarSpider/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarSpider/CarSpider/spiders/car_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/CarSpider/CarSpider/spiders/car_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlite_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite_db.py" afterDir="false" />
-    </list>
+    <list default="true" id="ab93ea77-ef7a-4d19-bc3a-484f2e7a7f04" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
