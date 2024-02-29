@@ -9,8 +9,8 @@
 
 BOT_NAME = "CarSpider"
 
-SPIDER_MODULES = ["CarSpider.spiders"]
-NEWSPIDER_MODULE = "CarSpider.spiders"
+SPIDER_MODULES = ["CarSpider.CarSpider.spiders"]
+NEWSPIDER_MODULE = "CarSpider.CarSpider.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -64,7 +64,7 @@ SPIDER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'CarSpider.pipelines.CarSpiderPipeline': 300,
+   'CarSpider.CarSpider.pipelines.CarSpiderPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
