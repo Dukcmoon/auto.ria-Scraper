@@ -1,6 +1,4 @@
 import scrapy
-from scrapy.crawler import CrawlerProcess
-from scrapy.utils.project import get_project_settings
 
 
 class CarSpiderSpider(scrapy.Spider):
@@ -20,17 +18,3 @@ class CarSpiderSpider(scrapy.Spider):
         next_page = response.css('a.page-link.js-next').attrib['href']
         if next_page is not None:
             yield response.follow(next_page, callback=self.parse)
-
-
-
-def startSpider():
-    try:
-        process = CrawlerProcess(settings=get_project_settings())
-        process.crawl(CarSpiderSpider)
-        process.start()
-    except Exception as e:
-        print(f"An error occurred: {e}")
-
-
-
-
