@@ -21,11 +21,15 @@ def upload_to_json(price_filter, mileage_filter, title_filter):
 
         # Filtering by price
         if price_filter:
-            if row[2] > int(price_filter):
+            if price_filter == 0:
+                continue
+            elif row[2] > int(price_filter):
                 continue
 
         # Filtering by mileage
         if mileage_filter:
+            if mileage_filter == 0:
+                continue
             if row[3] > int(mileage_filter):
                 continue
 
