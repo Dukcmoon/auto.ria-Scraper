@@ -10,10 +10,10 @@ This script `main.py` provides functionalities for scraping car data and uploadi
 
 ## Commands
 
-### 1. start-scraping
+### 1. scrapy
 Use this command to initiate the scraping process.
 
-### 2. start-upload
+### 2. upload
 Use this command to start uploading the scraped data.
 
 ## Options

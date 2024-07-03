@@ -1,7 +1,7 @@
 import os
 
 from CarSpider.runner import start_spider
-from sqlite_db import upload_to_json
+from upload_filtered_cars_to_json import upload_to_json
 import click
 
 
@@ -32,5 +32,5 @@ mycommands.add_command(scrapy)
 
 
 if __name__ == "__main__":  # entry points
-    click.echo('by goosvel')  # my nickname :D
+    click.echo('by goosvel')
     mycommands()  # start check commands
