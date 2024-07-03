@@ -38,7 +38,7 @@ def upload_to_json(price_filter, mileage_filter, title_filter):
         })
 
     # Saving json to a file
-    with open('file/upload.json', 'w') as f:
+    with open('upload.json', 'w') as f:
         json.dump(json_data, f, indent=4)
 
     # Closing the database connection
