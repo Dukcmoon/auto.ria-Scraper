@@ -3,7 +3,7 @@ import json
 
 def upload_to_json(price_filter, mileage_filter, title_filter):
     # Connecting to the database
-    conn = sqlite3.connect('file/cars.sqlite')
+    conn = sqlite3.connect('cars.sqlite')
     cur = conn.cursor()
 
     # Fix: Add a query to fetch data from the table

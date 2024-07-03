@@ -6,7 +6,7 @@ import sqlite3
 
 class CarSpiderPipeline:
     def open_spider(self, spider):
-        self.conn = sqlite3.connect('file/cars.sqlite')
+        self.conn = sqlite3.connect('cars.sqlite')
         self.cur = self.conn.cursor()
         create_table_query = """
         CREATE TABLE IF NOT EXISTS Cars (
