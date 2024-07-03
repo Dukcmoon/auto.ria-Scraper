@@ -4,15 +4,6 @@ from CarSpider.runner import start_spider
 from sqlite_db import upload_to_json
 import click
 
-"""
-  ________                                  .__   
- /  _____/  ____   ____  _________  __ ____ |  |  
-/   \  ___ /  _ \ /  _ \/  ___/\  \/ // __ \|  |  
-\    \_\  (  <_> |  <_> )___ \  \   /\  ___/|  |__
- \______  /\____/ \____/____  >  \_/  \___  >____/
-        \/                  \/            \/      
-
-"""
 
 settings_file_path = 'CarSpider.CarSpider.settings'
 os.environ.setdefault('SCRAPY_SETTINGS_MODULE', settings_file_path)
@@ -42,5 +33,4 @@ mycommands.add_command(scrapy)
 
 if __name__ == "__main__":  # entry points
     click.echo('by goosvel')  # my nickname :D
-    start_spider()
-    #mycommands()  # start check commands
+    mycommands()  # start check commands

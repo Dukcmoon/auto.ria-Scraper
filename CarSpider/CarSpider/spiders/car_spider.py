@@ -3,7 +3,7 @@ import scrapy
 
 class CarSpiderSpider(scrapy.Spider):
     name = "CarSpider"
-    allowed_domains = ['auto.ria.coms']
+    allowed_domains = ['auto.ria.com']
     start_urls = ["https://auto.ria.com/car/used/"]
 
     def parse(self, response):

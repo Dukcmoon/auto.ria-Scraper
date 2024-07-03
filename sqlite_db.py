@@ -1,49 +1,45 @@
-import json
 import sqlite3
+import json
 
 def upload_to_json(price_filter, mileage_filter, title_filter):
-    conn = sqlite3.connect(r'../file/cars.sqlite')
+    # Подключение к базе данных
+    conn = sqlite3.connect('file/cars.sqlite')
     cur = conn.cursor()
 
+    # Исправление: Добавление запроса для получения данных из таблицы
+    cur.execute("SELECT title, url, price, mileage FROM cars")
     rows = cur.fetchall()
+
+    json_data = []
+
     for row in rows:
-        print(row)
+        # Фильтрация по заголовку
+        if title_filter:
+            title_filter_list = list(title_filter.lower())
+            if not all(letter in row[0].lower() for letter in title_filter_list):
+                continue
 
+        # Фильтрация по цене
+        if price_filter:
+            if row[2] > int(price_filter):
+                continue
 
+        # Фильтрация по пробегу
+        if mileage_filter:
+            if row[3] > int(mileage_filter):
+                continue
 
-    # json_data = []
-    #
-    # for row in result:
-    #
-    #     if title_filter != 0:
-    #         title_filter_list = []
-    #         for letter in title_filter.lower():
-    #             title_filter_list.append(letter)
-    #
-    #         if all(elem in row[0].lower() for elem in title_filter_list):
-    #             print(row[0])
-    #         else:
-    #             continue
-    #
-    #     if price_filter != 0:
-    #         if row[2] <= int(price_filter):
-    #             print(row[2])
-    #         else:
-    #             continue
-    #
-    #     if mileage_filter != 0:
-    #         if row[3] <= int(mileage_filter):
-    #             print(row[3])
-    #         else:
-    #             continue
-    #
-    #     json_data.append({
-    #         'Title': row[0],
-    #         'URL': row[1],
-    #         'Price': row[2],
-    #         'Mileage': row[3]
-    #     })
-    #
-    # with open('file/upload.json', 'w') as f:
-    #     json.dump(json_data, f)
+        # Добавление данных в json
+        json_data.append({
+            'Title': row[0],
+            'URL': row[1],
+            'Price': row[2],
+            'Mileage': row[3]
+        })
+
+    # Сохранение json в файл
+    with open('file/upload.json', 'w') as f:
+        json.dump(json_data, f, indent=4)
+
+    # Закрытие подключения к базе данных
     conn.close()
